@@ -32,6 +32,15 @@ body {
     text-decoration: none;
     color: white;
 }
+.fa-bars{
+    border: 1px grey solid;
+    padding: 0.5em;
+}
+.bg-dark .container .row .nav-hide {
+    display: none;
+    text-align: right;
+    line-height: 90px;
+}
 /* /<!-- /HEADER --> */
 
 /* <!-- JUMBO --> */
@@ -77,6 +86,9 @@ body {
     color: white;
     border-radius: 5px;
 }
+.fa-download{
+    margin-right: 0.3em;
+}
 .contact-me {
     color: black;
 }
@@ -85,7 +97,40 @@ body {
     border-right: 0;
     border-left: 0;
 }
+.send {
+    padding: 0.5em 1em;
+    background-color: rgb(26,188,156);
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+}
 
+/* FOOTER */
+.footer-light {
+    background-color: rgb(58,84,109);
+    margin-top: 1em;
+}
+
+.container-fluid .text-center p a {
+    color: rgb(26,188,156);
+    list-style-type: none;
+}
+
+footer .footer-dark {
+    padding: 2em;
+    background-color: rgb(44,62,80);
+}
+
+@media screen and (min-width: 576px) and (max-width:767px) {
+
+    .bg-dark .container .row .big-menu .nav-dx {
+        display: none;
+    }
+
+    .bg-dark .container .row .nav-hide {
+        display: block;    
+    }
+}
     /* <!-- /MAIN --> */
 /* 
 (min-width: 576px) sm
