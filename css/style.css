@@ -11,12 +11,13 @@ body {
     height: 90px;
 }
 
-.container-fluid .container .row {
+.bg-dark .container .row {
     height: 90px;
 }
 
 .bg-dark {
     background-color: rgb(44,62,80);
+    width: 100%;
 }
 
 .nav-dx {
@@ -36,7 +37,7 @@ body {
 /* <!-- JUMBO --> */
 .jumbo {
     height: 500px;
-
+    background-color: rgb(26,188,156);
 }
 .container-img {
     padding: 50px 0;
@@ -70,12 +71,20 @@ body {
 
 .download {
     margin-top: 1em;
-    padding: 1em;
+    padding: 0.8em 1.5em;
     background-color: rgb(26,188,156);
     border: 1px solid white;
     color: white;
+    border-radius: 5px;
 }
-
+.contact-me {
+    color: black;
+}
+.contact-me .row .border_my {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
 
     /* <!-- /MAIN --> */
 /* 
