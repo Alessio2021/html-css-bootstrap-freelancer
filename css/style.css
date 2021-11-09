@@ -1,0 +1,50 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    color: white;
+}
+
+.container {
+    height: 90px;
+}
+
+.row {
+    height: 90px;
+}
+
+.container-fluid {
+    background-color: rgb(44,62,80);
+}
+
+.nav-dx {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+.nav-dx li {
+    padding: 10px;
+}
+.nav-dx li a {
+    text-decoration: none;
+    color: white;
+}
+
+.container-fluid .container .row .col-lg-8 {
+    display: flex;
+    justify-content: end;
+}
+
+.jumbo {
+    height: 550px;
+    background-color: rgb(26,188,156);
+}
+
+@media screen (min-width: 576px) {
+    
+}
+
+@media screen (min-width: 768px) { 
+    
+}
