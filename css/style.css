@@ -25,52 +25,57 @@ body {
     display: flex;
     margin: 0;
 }
+
 .nav-dx li {
     padding: 10px;
 }
+
 .nav-dx li a {
     text-decoration: none;
     color: white;
 }
+
 .fa-bars{
     border: 1px grey solid;
     padding: 0.5em;
 }
+
 .bg-dark .container .row .nav-hide {
     display: none;
     text-align: right;
     line-height: 90px;
 }
+
 /* /<!-- /HEADER --> */
 
 /* <!-- JUMBO --> */
 .jumbo {
-    height: 500px;
     background-color: rgb(26,188,156);
 }
-.container-img {
-    padding: 50px 0;
-    margin: auto;
+
+.jumbo .row div img {
+    width: 40%;
 }
+
 .square-img {
     width: 200px;
     height: 200px;
     background-color: white;
     margin: auto;
 }
+
     /* <!-- /JUMBO --> */
 
     /* <!-- MAIN --> */
 
-
+/* 360 x 220 img */
 .portfolio .row{
     color: black;
 }
-.portfolio .row .col .img-svg{
-    background-color: purple;
+.portfolio .row .col img{
     padding: 1em;
-    height: 150px;
-    border-radius: 10px;
+    width: 100%;
+    border-radius: 25px;
 }
 
 /* SECTION ABOUT */
