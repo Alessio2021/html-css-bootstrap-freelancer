@@ -1,49 +1,72 @@
 html {
     font-size: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
     color: white;
 }
 
+h1 {
+    font-size: 4em;
+}
+
+.star-line {
+    width: 100px;
+    height: 4px;
+    border-radius: 20px;
+    margin: 0.5em;
+    background-color: white;
+}
+
+.star-line-dark {
+    background-color: black;
+    width: 100px;
+    height: 4px;
+    border-radius: 20px;
+    margin: 0.5em;
+}
+
+
+
 /* <!-- HEADER --> */
-.container {
+
+
+.bg-dark-my h1 {
+    font-size: 2em;
+}
+
+.bg-dark-my .container .row {
     height: 90px;
 }
 
-.bg-dark .container .row {
-    height: 90px;
-}
-
-.bg-dark {
+.bg-dark-my {
     background-color: rgb(44,62,80);
     width: 100%;
 }
 
-.nav-dx {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
+.nav-menu {
+    line-height: 38px;
 }
 
 .nav-dx li {
     padding: 10px;
 }
-
-.nav-dx li a {
-    text-decoration: none;
+.bg-dark-my .container .row .big-menu ul li a{
     color: white;
 }
-
-.fa-bars{
-    border: 1px grey solid;
-    padding: 0.5em;
+.hamburger {
+    font-size: 1.5em;
+    padding: 0 0.5em;
+    border: 1px solid white;
+    color: grey;
+    border-radius: 5px;
+    background-color: rgb(44,62,80);
 }
 
-.bg-dark .container .row .nav-hide {
-    display: none;
-    text-align: right;
-    line-height: 90px;
+.bg-dark-my .container .row .big-menu ul li a:hover {
+    color: rgb(26,188,156);
 }
 
 /* /<!-- /HEADER --> */
@@ -54,21 +77,15 @@ body {
 }
 
 .jumbo .row div img {
-    width: 40%;
-}
-
-.square-img {
-    width: 200px;
-    height: 200px;
-    background-color: white;
-    margin: auto;
+    height: 300px;
+    width: 300px;
 }
 
     /* <!-- /JUMBO --> */
 
     /* <!-- MAIN --> */
 
-/* 360 x 220 img */
+
 .portfolio .row{
     color: black;
 }
@@ -91,7 +108,7 @@ body {
     color: white;
     border-radius: 5px;
 }
-.fa-download{
+.logo-download{
     margin-right: 0.3em;
 }
 .contact-me {
@@ -110,6 +127,13 @@ body {
     border-radius: 5px;
 }
 
+.container-fluid .row div input {
+    width: 100%;
+}
+
+
+/* <!-- /MAIN --> */
+
 /* FOOTER */
 .footer-light {
     background-color: rgb(58,84,109);
@@ -125,18 +149,42 @@ footer .footer-dark {
     padding: 2em;
     background-color: rgb(44,62,80);
 }
+.social {
+    padding: 1em;
+    border-radius: 25px;
+    border: 1px solid white;
+}
+
+.social:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
 
 @media screen and (min-width: 576px) and (max-width:767px) {
 
-    .bg-dark .container .row .big-menu .nav-dx {
-        display: none;
+    .bg-dark-my h1 {
+        font-size: 1.5em;
+    }
+    .container, .container-sm {
+        max-width: 100%;
+    }
+    .nav-container-my {
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        top: 0;
+        left: 0;
     }
 
-    .bg-dark .container .row .nav-hide {
-        display: block;    
+    .jumbo {
+        margin-top: 3em;
     }
 }
-    /* <!-- /MAIN --> */
+
+
+
+
 /* 
 (min-width: 576px) sm
 
